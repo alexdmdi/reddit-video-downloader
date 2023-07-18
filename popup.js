@@ -1,9 +1,11 @@
+//On button press, get the current tab URL then pass it onto the openLink function that uses it to open the new tab 
 document.querySelector(".btn").addEventListener("click", async () => {
     const tabURL = await getCurrentTab();
     openLink(tabURL)
     
 });
 
+//Gets current tab and returns its URL
 async function getCurrentTab() {
     let queryOptions = { active: true, currentWindow: true };
     // `tab` will either be a `tabs.Tab` instance or `undefined`.
@@ -21,6 +23,8 @@ async function getCurrentTab() {
 
 
 async function openLink(tabURL) {
+    // The URL matches the pattern: "reddit.com/r/anything/comments/anything/"
+    // If the URL is valid then append .json to it then try to fetch the video fallback URL from the response, then open a new tab with the link
     if (tabURL && /reddit\.com\/r\/[^/]+\/comments\/[^]+\/$/.test(tabURL)) {
         const jsonLink = tabURL + '.json'
 
@@ -46,4 +50,3 @@ async function openLink(tabURL) {
    
 }
 
-// The URL matches the pattern: "reddit.com/r/anything/comments/anything/"
