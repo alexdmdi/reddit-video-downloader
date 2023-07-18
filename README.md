@@ -1,5 +1,8 @@
 ## Reddit Video Downloader Extension 1.0 <br>
-Sideload onto your browser by enabling developer mode in the extensions settings. If you download the zip then extract it into a folder, and then select that folder when loading unpacked.
+How to sideload onto your browser: 
+1. Download the repo as a zip file then extract it into a folder
+2. Enable developer mode in the extensions settings
+3. Press load unpacked and select the folder you extracted the files to
 <br>
 
 ## Built with 
