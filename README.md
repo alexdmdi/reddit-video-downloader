@@ -6,4 +6,4 @@ Sideload onto your browser by enabling developer mode in the extensions settings
 HTML, CSS, and Javascript.
 <br>
 ## Icon
-Icon created by mewith photoshop
+Icon created by me
